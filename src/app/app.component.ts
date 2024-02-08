@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { INoticia } from './interfaces/i-noticia.interface';
 
 @Component({
   selector: 'app-root',
@@ -9,5 +10,18 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'blog';
+  arrNoticias: INoticia[] = [
+    {
+      title: "",
+      image: "",
+      text: "",
+      date: 0,
+    },
+    {
+      title: "",
+      image: "",
+      text: "",
+      date: 0,
+    }
+  ]
 }
