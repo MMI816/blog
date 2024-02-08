@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { INoticia } from '../../interfaces/i-noticia.interface';
 
 @Component({
   selector: 'app-notices',
@@ -8,5 +9,12 @@ import { Component } from '@angular/core';
   styleUrl: './notices.component.css'
 })
 export class NoticesComponent {
+  @Input() blog: INoticia[] = [];
+  ngOnInit() : void {
+    this.cargarDatos()
+  }
 
+  cargarDatos(){
+    console.log(this.blog)
+  }
 }

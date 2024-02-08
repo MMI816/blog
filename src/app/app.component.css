@@ -1,0 +1,18 @@
+section {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1.5 em;
+}
+
+section aside, section div {
+    width: 100%;
+    background-color: lightgrey;
+    padding: 20 px;
+}
+
+@media(min-width:800px){
+    section{
+        flex-direction: row;
+    }
+}
