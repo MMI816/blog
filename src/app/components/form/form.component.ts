@@ -17,6 +17,7 @@ export class FormComponent {
     if(this.newNotice.title !=="" && this.newNotice.image !== "" && this.newNotice.text !== "" && this.newNotice.date !== ""){
       this.noticiaCargada.emit(this.newNotice)
       this.newNotice = {title: "", image: "", text: "", date: ""}
+      alert("Gracias por tu noticia")
     }else {
       alert("Los campos están vacíos")
     }
