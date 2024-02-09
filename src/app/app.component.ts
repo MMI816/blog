@@ -14,7 +14,7 @@ import { NoticesComponent } from './components/notices/notices.component';
 export class AppComponent {
   arrNoticias: INoticia[] = [
     {
-      title: "La lucha CONTRA EL DESPERDICIO ALIMENTARIO ganó la partida en Madrid Fusión 2024",
+      title: "La lucha contra el desperdicio alimentario ganó la partida en Madrid Fusión 2024",
       image: "https://www.cuentamealgobueno.com/wp-content/uploads/2024/02/coffeetogo-3926395_640.jpg",
       text: "El cocinero valenciano Ricard Camarena recibió el premio “Defensa del Producto Alimentos de España” durante la celebración de la vigésima edición Madrid Fusion. Este reconoce su lucha contra el desperdicio alimentario. Esto ocurrió en el Congreso Internacional de Alta Cocina Madrid Fusión Alimentos de España y el Ministro de Agricultura, Pesca y Alimentación, Luis Planas, acudió al evento para hacer entrega de este galardón.",
       date: "8 febrero 2024",
