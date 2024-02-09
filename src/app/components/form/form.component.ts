@@ -1,12 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { INoticia } from '../../interfaces/i-noticia.interface';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
   standalone: true,
-  imports: [],
+  imports: [FormsModule],
   templateUrl: './form.component.html',
   styleUrl: './form.component.css'
 })
 export class FormComponent {
+  newNotice: INoticia = {title: "", image: "", text: "", date: 0}
+  @Output() noticiaCargada: EventEmitter<INoticia> = new EventEmitter()
 
+  guardar(): void {
+    if(this.newNotice.title !=="" && this.newNotice.image !== "" && this.newNotice.text !== "" && this.newNotice.date !== 0){
+      this.noticiaCargada.emit(this.newNotice)
+      this.newNotice = {title: "", image: "", text: "", date: 0}
+    }else {
+      alert("Los campos están vacíos")
+    }
+  }
 }

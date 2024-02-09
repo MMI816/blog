@@ -14,7 +14,13 @@ export class NoticesComponent {
     this.cargarDatos()
   }
 
-  cargarDatos(){
-    console.log(this.blog)
+  cargarDatos() : string {
+    let html = "";
+    this.blog.forEach(noticia =>{
+      html += `<article>
+                  <h3>${noticia.title} - ${noticia.image} - ${noticia.text} - ${noticia.date}</h3>
+              </article>`
+    })
+    return html
   }
 }

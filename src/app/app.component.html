@@ -5,7 +5,7 @@
 <main>
   <section>
     <aside>
-      <app-form></app-form>
+      <app-form (noticiaCargada)="insertNotice($event)"></app-form>
     </aside>
     <div>
       <app-notices [blog]="arrNoticias"></app-notices>
