@@ -28,6 +28,6 @@ export class AppComponent {
   ]
 
   insertNotice ($event:INoticia) : void {
-    this.arrNoticias.push($event);
+    this.arrNoticias.unshift($event);
   }
 }
