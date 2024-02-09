@@ -1,19 +1,19 @@
 <div class="form">
     <div>
         <label for="name">Título</label>
-        <input type="text" id="name" [(ngModel)]="newNotice.title">
+        <input type="text" id="title" [(ngModel)]="newNotice.title">
     </div>
     <div>
         <label for="phone">Imagen (copia la url) </label>
-        <input type="text" id="phone" [(ngModel)]="newNotice.image">
+        <input type="text" id="image" [(ngModel)]="newNotice.image">
     </div>
     <div>
         <label for="phone">Cuerpo de la noticia </label>
-        <input type="text" id="phone" [(ngModel)]="newNotice.text">
+        <input type="text" id="text" [(ngModel)]="newNotice.text">
     </div>
     <div>
         <label for="phone">Fecha de publicación </label>
-        <input type="number" id="phone" [(ngModel)]="newNotice.date">
+        <input type="number" id="date" [(ngModel)]="newNotice.date">
     </div>
     <button (click)="guardar()">Enviar</button>
 </div>
