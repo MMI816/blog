@@ -18,7 +18,10 @@ export class NoticesComponent {
     let html = "";
     this.blog.forEach(noticia =>{
       html += `<article>
-                  <h3>${noticia.title} - ${noticia.image} - ${noticia.text} - ${noticia.date}</h3>
+                  <h3>${noticia.title}</h3>  
+                  <img src="${noticia.image}" alt="">
+                  <p>${noticia.text}<p>
+                  <p>${noticia.date}<p>  
               </article>`
     })
     return html

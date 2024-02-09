@@ -4,10 +4,10 @@
 </header>
 <main>
   <section>
-    <aside>
+    <aside class="form">
       <app-form (noticiaCargada)="insertNotice($event)"></app-form>
     </aside>
-    <div>
+    <div class="noticias">
       <app-notices [blog]="arrNoticias"></app-notices>
     </div>
   </section>
